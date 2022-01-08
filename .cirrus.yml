@@ -10,7 +10,7 @@ env:
     KT_LINK: https://github.com/jro1979oliver/android_kernel_lenovo_msm8916.git
     PLATFORM: msm8916
     KT_PATH: kernel/$OEM/$PLATFORM
-    EXTRA_CMD: # Any Extra Command to Run Before Building
+    EXTRA_CMD: "git clone --depth=1 https://github.com/ghostrider-reborn/prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-6.x.git $SYNC_PATH/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x"
     LUNCH_COMBO: rr_A6020-userdebug
     TARGET: bacon
     OUTPUT: RROS*.zip
