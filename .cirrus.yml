@@ -21,6 +21,9 @@ env:
     CCACHE_DIR: $HOME/work/.ccache
     J_VAL: 16
 
+    # Cirrus Specific Vars (Do *NOT* Change)
+    CIRRUS_SHELL: bash
+
 task:
   name: "AOSP Build"
   trigger_type: manual
