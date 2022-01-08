@@ -7,7 +7,7 @@ env:
     DT_PATH: device/$OEM/$DEVICE
     VT_LINK: https://github.com/hsj51/vendor_lenovo_A6020.git -b 10.x
     VT_PATH: vendor/$OEM/$DEVICE
-    KT_LINK: https://github.com/hsj51/kernel_lenovo_msm8916.git
+    KT_LINK: https://github.com/jro1979oliver/android_kernel_lenovo_msm8916.git
     PLATFORM: msm8916
     KT_PATH: kernel/$OEM/$PLATFORM
     EXTRA_CMD: # Any Extra Command to Run Before Building
