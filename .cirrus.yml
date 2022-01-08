@@ -1,19 +1,19 @@
 env:
-    MANIFEST: # Manifest URL
-    MANIFEST_BRANCH: # Manifest Branch (eg: ten)
-    DEVICE: # Device Codename
-    OEM: # Device OEM
-    DT_LINK: # Link of the Device Tree
+    MANIFEST: https://github.com/ResurrectionRemix/platform_manifest.git
+    MANIFEST_BRANCH: Q
+    DEVICE: A6020
+    OEM: lenovo
+    DT_LINK: https://github.com/Sushrut1101-ROMs/device_lenovo_A6020.git -b rr_10
     DT_PATH: device/$OEM/$DEVICE
-    VT_LINK: # Link of the Vendor Tree
+    VT_LINK: https://github.com/hsj51/vendor_lenovo_A6020.git -b 10.x
     VT_PATH: vendor/$OEM/$DEVICE
-    KT_LINK: # Link of the Kernel Source
-    PLATFORM: # SoC Platform (eg: msm8916)
+    KT_LINK: https://github.com/hsj51/kernel_lenovo_msm8916.git
+    PLATFORM: msm8916
     KT_PATH: kernel/$OEM/$PLATFORM
     EXTRA_CMD: # Any Extra Command to Run Before Building
-    LUNCH_COMBO: # Lunch Combo (eg: "lineage_${DEVICE}-userdebug")
-    TARGET: # Build Target (eg: bacon)
-    OUTPUT: # File to Upload (eg: "lineage*.zip")
+    LUNCH_COMBO: rr_A6020-userdebug
+    TARGET: bacon
+    OUTPUT: RROS*.zip
 
     # Not Recommended to Change
     SYNC_PATH: $HOME/work # Do NOT use "~". Use $HOME instead.
