@@ -1,6 +1,6 @@
 env:
-    MANIFEST: https://github.com/ResurrectionRemix/platform_manifest.git
-    MANIFEST_BRANCH: Q
+    MANIFEST: https://github.com/The-RAVEN-OS/manifest.git
+    MANIFEST_BRANCH: twelve
     DEVICE: A6020
     OEM: lenovo
     DT_LINK: https://github.com/Sushrut1101-ROMs/device_lenovo_A6020.git -b rr_10
