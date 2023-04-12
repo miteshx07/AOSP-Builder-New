@@ -14,7 +14,7 @@ fi
 $EXTRA_CMD
 
 # Prepare the Build Environment
-source build/envsetup.sh
+. build/envsetup.sh
 
 # lunch the target
 lunch ${LUNCH_COMBO} || { echo "ERROR: Failed to lunch the target!" && exit 1; }
