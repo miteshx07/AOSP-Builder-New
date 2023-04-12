@@ -5,7 +5,7 @@ env:
     OEM: xiaomi
     DT_LINK: https://github.com/mitmac29/device_xiaomi_lavender1.git -b arc
     DT_PATH: device/$OEM/$DEVICE
-    VT_LINK: https://github.com/mitmac29/vendor_xiaomi_lavender.git -b 11
+    VT_LINK: https://github.com/mitmac29/vendor_xiaomi_lavender1.git -b 11
     VT_PATH: vendor/$OEM/$DEVICE
     KT_LINK: https://github.com/mitmac29/kernel_xiaomi_lavender.git -b qti-oldcam
     PLATFORM: sdm660
@@ -18,7 +18,7 @@ env:
     SYNC_PATH: $HOME/work # Do NOT use "~". Use $HOME instead.
     CCACHE_SIZE: 50G
     CCACHE_DIR: $HOME/work/.ccache
-    J_VAL: 16
+    J_VAL: 32
 
     # Cirrus Specific Vars (Do *NOT* Change)
     CIRRUS_SHELL: bash
