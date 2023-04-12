@@ -1,5 +1,5 @@
 env:
-    MANIFEST: repo init -u https://github.com/mitmac29/android.git
+    MANIFEST: https://github.com/mitmac29/android.git
     MANIFEST_BRANCH: crd-11.0
     DEVICE: lavender
     OEM: xiaomi
