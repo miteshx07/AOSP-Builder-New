@@ -1,19 +1,19 @@
 env:
-    MANIFEST: https://github.com/The-RAVEN-OS/manifest.git
-    MANIFEST_BRANCH: twelve
-    DEVICE: A6020
-    OEM: lenovo
-    DT_LINK: https://github.com/Sushrut1101-ROMs/device_lenovo_A6020.git -b rr_10
+    MANIFEST: repo init -u https://github.com/mitmac29/android.git
+    MANIFEST_BRANCH: crd-11.0
+    DEVICE: lavender
+    OEM: xiaomi
+    DT_LINK: https://github.com/mitmac29/device_xiaomi_lavender1.git -b arc
     DT_PATH: device/$OEM/$DEVICE
-    VT_LINK: https://github.com/hsj51/vendor_lenovo_A6020.git -b 10.x
+    VT_LINK: https://github.com/mitmac29/vendor_xiaomi_lavender.git -b 11
     VT_PATH: vendor/$OEM/$DEVICE
-    KT_LINK: https://github.com/jro1979oliver/android_kernel_lenovo_msm8916.git
-    PLATFORM: msm8916
-    KT_PATH: kernel/$OEM/$PLATFORM
+    KT_LINK: https://github.com/mitmac29/kernel_xiaomi_lavender.git -b qti-oldcam
+    PLATFORM: sdm660
+    KT_PATH: kernel/$OEM/$DEVICE
     EXTRA_CMD: "git clone --depth=1 https://github.com/ghostrider-reborn/prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-6.x.git $SYNC_PATH/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-6.x"
-    LUNCH_COMBO: rr_A6020-userdebug
+    LUNCH_COMBO: lineage_lavender-userdebug
     TARGET: bacon
-    OUTPUT: RROS*.zip
+    OUTPUT: Arc*.zip
 
     # Not Recommended to Change
     SYNC_PATH: $HOME/work # Do NOT use "~". Use $HOME instead.
@@ -27,7 +27,7 @@ env:
 task:
   name: "AOSP Build"
   trigger_type: manual
-  timeout_in: 120m
+  timeout_in: 300m 
   container:
       image: registry.gitlab.com/sushrut1101/docker:latest
       cpu: 8
