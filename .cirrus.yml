@@ -16,7 +16,7 @@ env:
 
     # Not Recommended to Change
     SYNC_PATH: $HOME/work # Do NOT use "~". Use $HOME instead.
-    CCACHE_SIZE: 30G
+    CCACHE_SIZE: 50G
     CCACHE_DIR: $HOME/work/.ccache
     J_VAL: 16
 
