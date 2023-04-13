@@ -13,7 +13,7 @@ fi
 # Run the Extra Co
 
 # Prepare the Build Environment
-. build/envsetup.sh
+source build/envsetup.sh
 
 # lunch the target
 lunch ${LUNCH_COMBO} || { echo "ERROR: Failed to lunch the target!" && exit 1; }
