@@ -18,7 +18,7 @@ env:
     SYNC_PATH: $HOME/work # Do NOT use "~". Use $HOME instead.
     CCACHE_SIZE: 50G
     CCACHE_DIR: $HOME/work/.ccache
-    J_VAL: 32
+    J_VAL: 31
 
     # Cirrus Specific Vars (Do *NOT* Change)
     CIRRUS_SHELL: bash
